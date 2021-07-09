@@ -30,7 +30,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    func changeColor() {
+        colorView.backgroundColor = UIColor(red: CGFloat((redSlider.value)), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
+    }
+    
     @IBAction func rgbSliderChange() {
+        changeColor()
     }
 }
 

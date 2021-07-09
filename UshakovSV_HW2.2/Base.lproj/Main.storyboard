@@ -44,6 +44,9 @@
                                             <constraint firstAttribute="height" constant="29" id="bmG-bm-MLj"/>
                                             <constraint firstAttribute="width" constant="114" id="toh-YW-jVa"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="rgbSliderChange" destination="BYZ-38-t0r" eventType="valueChanged" id="0gd-RN-FZZ"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HFb-Bl-h1m">
                                         <rect key="frame" x="-2" y="172" width="118" height="30"/>
@@ -51,6 +54,9 @@
                                             <constraint firstAttribute="width" constant="114" id="0OK-zC-Qpl"/>
                                             <constraint firstAttribute="height" constant="29" id="fmi-nL-vWq"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="rgbSliderChange" destination="BYZ-38-t0r" eventType="valueChanged" id="srl-AF-BGP"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
