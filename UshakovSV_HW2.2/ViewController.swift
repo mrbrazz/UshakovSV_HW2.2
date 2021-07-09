@@ -9,36 +9,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // IB Outlet
-
-    @IBOutlet weak var viewWindow: UIView!
-    @IBOutlet weak var redSlider: UISlider!
-    @IBOutlet weak var greenSlider: UISlider!
-    @IBOutlet weak var blueSlider: UISlider!
+    @IBOutlet weak var colorView: UIView!
     
     
+    @IBOutlet weak var redSlider: UISlider! {
+        didSet{
+            redSlider.tintColor = UIColor.red }
+    }
+    @IBOutlet weak var greenSlider: UISlider! {
+        didSet{
+            greenSlider.tintColor = UIColor.green }
+    }
     
+@IBOutlet weak var blueSlider: UISlider! {
+    didSet{
+        blueSlider.tintColor = UIColor.blue }
+}
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        redSlider.value = 1
-        redSlider.minimumValue = 0
-        redSlider.maximumValue = 1
-        
     }
 
-    // IB Action
-    @IBAction func redSliderAction() {
-        let redSliderValue = CGFloat(redSlider.value)
-        view.backgroundColor = view.backgroundColor?.withAlphaComponent(redSliderValue)
+    @IBAction func rgbSliderChange() {
     }
-    @IBAction func greenSliderAction() {
-    }
-    @IBAction func blueSliderAction() {
-    }
-    
-    
-    
 }
 
